@@ -1,0 +1,85 @@
+{{ define "body" }}
+
+<body class="{{ if .Site.Params.backgroundImage }} background-image"
+	style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
+	{{ end }}
+
+	{{ define "main" }}
+	<main aria-role="main">
+		<div>
+			<h1>{{ .Site.Title }}</h1>
+			<div id="cover"></div>
+			<div class="fixedtopad">
+				<ins class="adsbygoogle"
+					style="display:block;margin:0 auto;text-align:center;min-width:250px;max-width:728px;width:100%;max-height:90px;"
+					data-ad-client="PUT_ID_HERE" data-ad-slot="PUT_ID_HERE" data-full-width-responsive="true"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+			<div id="content">
+				<div id="tool-wrapper">
+					<div class="topad">
+						<amp-ad width="100vw" height="320" type="adsense" data-ad-client="PUT_ID_HERE"
+							data-ad-slot="PUT_ID_HERE" data-auto-format="rspv" data-full-width="">
+							<div overflow=""></div>
+						</amp-ad>
+					</div>
+					<div id="tool">
+						<div id="video-container">
+							<video id="webcam" autoplay></video>
+							<div id="overlay">Click to Start</div>
+						</div>						
+					</div>
+					<div class="bottomad">
+						<amp-ad width="100vw" height="320" type="adsense" data-ad-client="PUT_ID_HERE"
+							data-ad-slot="PUT_ID_HERE" data-auto-format="rspv" data-full-width="">
+							<div overflow=""></div>
+						</amp-ad>
+					</div>
+				</div>
+			<div class="content-inner">
+			    <h1>Blog posts</h1>
+			    {{ range (.Paginator 20).Pages.ByDate.Reverse }}
+			    {{ if eq .Type "posts" }}
+				<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+				{{ .Summary }}
+				<a href="{{ .RelPermalink }}">Read More</a>
+			    {{ end }}
+			    {{ end }}
+			</div>
+
+			</div>
+			<div class="fixedbottomad">
+				<ins class="adsbygoogle"
+					style="display:block;margin:0 auto;text-align:center;min-width:250px;max-width:728px;width:100%;max-height:90px;"
+					data-ad-client="PUT_ID_HERE" data-ad-slot="PUT_ID_HERE" data-full-width-responsive="true"></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+
+		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				const video = document.getElementById("webcam");
+				const overlay = document.getElementById("overlay");
+				let stream = null;
+
+				async function startWebcam() {
+					try {
+						stream = await navigator.mediaDevices.getUserMedia({ video: true });
+						video.srcObject = stream;
+						overlay.style.display = 'none';  // Hide the overlay
+					} catch (err) {
+						console.error("Error accessing webcam:", err);
+					}
+				}
+
+				// Attach event to both video and overlay
+				video.addEventListener("click", startWebcam);
+				overlay.addEventListener("click", startWebcam);
+			});
+		</script>
+	</main>
+	{{ end }}
