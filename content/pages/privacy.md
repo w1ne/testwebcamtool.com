@@ -1,14 +1,10 @@
 ---
-title: "Privacy Policy"
+title: "testwebcamtool.com Privacy Policy"
 date: 2021-01-29T12:00:31Z
 draft: false
 ---
 
-# testwebcamtool.com Privacy Policy
-
 At testwebcamtool.com, available at [https://www.testwebcamtool.com/](https://www.testwebcamtool.com/), one of our main priorities is the privacy of our guests. This data protection document contains the types of information that is collected and registered by testwebcamtool.com and an explanation of its use.
-
-If you have any questions about this privacy policy, please don't hesitate to contact us here: stringtune.online [at] gmail.com
 
 ## Regulation on the protection of personal data (GDPR)
 
