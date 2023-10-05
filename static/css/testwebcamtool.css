@@ -48,7 +48,6 @@ button {
     margin-top: 1em;
     padding: 0.5em 1em;
     background-color: #4CAF50;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -82,3 +81,35 @@ button:hover {
     align-items: center;
     cursor: pointer;
 }
+
+.tool-description p {
+    text-align: justify;
+}
+
+#audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #audioIndicator {
+    color: red;
+    animation: blink 1s infinite;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

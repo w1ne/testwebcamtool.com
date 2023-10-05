@@ -34,7 +34,12 @@
 						<div id="video-container">
 							<video id="webcam" autoplay></video>
 							<div id="overlay">Click to Start</div>
-						</div>						
+						</div>
+						<div id="audio-container">
+							<button id="recordAudio" >Record</button>
+							<button id="replayAudio" disabled>Replay</button>
+							<div id="audioIndicator" class="hidden">Recording...</div>
+						</div>
 					</div>
 					<div class="bottomad">
 						<amp-ad width="100vw" height="320" type="adsense" data-ad-client="PUT_ID_HERE"
@@ -43,16 +48,16 @@
 						</amp-ad>
 					</div>
 				</div>
-			<div class="content-inner">
-			    <h1>Blog posts</h1>
-			    {{ range (.Paginator 20).Pages.ByDate.Reverse }}
-			    {{ if eq .Type "posts" }}
-				<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-				{{ .Summary }}
-				<a href="{{ .RelPermalink }}">Read More</a>
-			    {{ end }}
-			    {{ end }}
-			</div>
+				<div class="content-inner">
+					<h1>Blog posts</h1>
+					{{ range (.Paginator 20).Pages.ByDate.Reverse }}
+					{{ if eq .Type "posts" }}
+					<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+					{{ .Summary }}
+					<a href="{{ .RelPermalink }}">Read More</a>
+					{{ end }}
+					{{ end }}
+				</div>
 
 			</div>
 			<div class="fixedbottomad">
@@ -66,7 +71,7 @@
 
 		</div>
 		<script>
-			document.addEventListener("DOMContentLoaded", function() {
+			document.addEventListener("DOMContentLoaded", function () {
 				const video = document.getElementById("webcam");
 				const overlay = document.getElementById("overlay");
 				let stream = null;
@@ -84,6 +89,60 @@
 				// Attach event to both video and overlay
 				video.addEventListener("click", startWebcam);
 				overlay.addEventListener("click", startWebcam);
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+			const recordAudioBtn = document.getElementById("recordAudio");
+			const replayAudioBtn = document.getElementById("replayAudio");
+			const audioIndicator = document.getElementById("audioIndicator");
+
+			let audioStream = null;
+			let audioRecorder = null;
+			let audioChunks = [];
+			let audioUrl = null;
+
+			async function startAudioRecording() {
+				audioIndicator.classList.remove("hidden");
+				audioChunks = [];
+				audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+				audioRecorder = new MediaRecorder(audioStream);
+
+				audioRecorder.ondataavailable = event => {
+				audioChunks.push(event.data);
+				};
+
+				audioRecorder.onstop = () => {
+				const audioBlob = new Blob(audioChunks, { type: "audio/wav" });
+				audioUrl = URL.createObjectURL(audioBlob);
+				replayAudioBtn.disabled = false;
+				};
+
+				audioRecorder.start();
+				setTimeout(() => stopAudioRecording(), 30000); // Stop after 30 seconds
+			}
+
+			function stopAudioRecording() {
+				audioRecorder.stop();
+				audioIndicator.classList.add("hidden");
+			}
+
+			function replayAudio() {
+				const audio = new Audio(audioUrl);
+				audio.play();
+			}
+
+			recordAudioBtn.addEventListener("click", function() {
+				if (audioRecorder && audioRecorder.state === "recording") {
+				stopAudioRecording();
+				recordAudioBtn.textContent = "Record";
+				} else {
+				startAudioRecording();
+				recordAudioBtn.textContent = "Stop";
+				}
+			});
+
+			replayAudioBtn.addEventListener("click", replayAudio);
 			});
 		</script>
 	</main>
