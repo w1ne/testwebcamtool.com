@@ -48,17 +48,18 @@
 						</amp-ad>
 					</div>
 				</div>
-				<div class="content-inner">
-					<h1>Blog posts</h1>
-					{{ range (.Paginator 20).Pages.ByDate.Reverse }}
-					{{ if eq .Type "posts" }}
-					<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-					{{ .Summary }}
-					<a href="{{ .RelPermalink }}">Read More</a>
-					{{ end }}
-					{{ end }}
+			<div class="content-inner">
+				  <h1>Blog posts</h1>
+				  {{ range (.Paginator 20).Pages.ByDate.Reverse }}
+				    {{ if eq .Type "posts" }}
+				      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+				      <div class="justify-text">
+					<span>{{ .Summary }}</span>
+					<span><a href="{{ .RelPermalink }}">Read More</a></span>
+				      </div>
+				    {{ end }}
+				  {{ end }}
 				</div>
-
 			</div>
 			<div class="fixedbottomad">
 				<ins class="adsbygoogle"

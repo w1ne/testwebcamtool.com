@@ -22,11 +22,14 @@ body.background-image::before {
 }
 
 main {
-    display: flex;
     justify-content: center;
     align-items: center;
     max-width: 800px; 
 }
+
+article {
+    width: 100%;
+  }  
 
 .app {
     display: flex;
@@ -112,3 +115,7 @@ button:hover {
     }
   }
   
+.justify-text {
+  text-align: justify;
+}
+
