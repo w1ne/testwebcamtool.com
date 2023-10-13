@@ -20,7 +20,9 @@ When setting up lighting for a webcam, it's important to have an understanding o
 
 Natural light comes from sources like the sun or moon. It varies in color temperature and intensity throughout the day. Natural light often creates soft, diffused lighting excellent for filming. But it can shift quickly and be unpredictable.
 
-![Illustration of a split scene comparing natural and artificial light sources. On one side, a window showcases the sun shining, casting soft, diffused ](Illustration_of_a_split_scene_comparing_natural_and_artificial_light_sources._On_one_side,_a_window_showcases_the_sun_shining,_casting_soft,_diffused_.png?width=400px#float-start)
+{{% bootstrap/clearfix %}}
+![Illustration of a split scene comparing natural and artificial light sources. On one side, a window showcases the sun shining, casting soft, diffused ](Illustration_of_a_split_scene_comparing_natural_and_artificial_light_sources._On_one_side,_a_window_showcases_the_sun_shining,_casting_soft,_diffused_.png?width=400px#center)
+{{% /bootstrap/clearfix %}}
 
 Artificial lights are steady, controllable sources like lamps, strobe lights, or LED panels. These produce illumination independent of external conditions. With artificial light, color temperature and brightness can be precisely manipulated. However, artificial lighting setups require more equipment and effort.
 
