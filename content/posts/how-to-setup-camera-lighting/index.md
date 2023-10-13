@@ -20,7 +20,7 @@ When setting up lighting for a webcam, it's important to have an understanding o
 
 Natural light comes from sources like the sun or moon. It varies in color temperature and intensity throughout the day. Natural light often creates soft, diffused lighting excellent for filming. But it can shift quickly and be unpredictable.
 
-![Illustration of a split scene comparing natural and artificial light sources. On one side, a window showcases the sun shining, casting soft, diffused ](Illustration_of_a_split_scene_comparing_natural_and_artificial_light_sources._On_one_side,_a_window_showcases_the_sun_shining,_casting_soft,_diffused_.png?width=400px)
+![Illustration of a split scene comparing natural and artificial light sources. On one side, a window showcases the sun shining, casting soft, diffused ](Illustration_of_a_split_scene_comparing_natural_and_artificial_light_sources._On_one_side,_a_window_showcases_the_sun_shining,_casting_soft,_diffused_.png?width=400px#float-start)
 
 Artificial lights are steady, controllable sources like lamps, strobe lights, or LED panels. These produce illumination independent of external conditions. With artificial light, color temperature and brightness can be precisely manipulated. However, artificial lighting setups require more equipment and effort.
 
@@ -36,7 +36,7 @@ There are a variety of light types and setups one can use for webcam streaming o
 
 ## Continuous Lights
 
-![Illustration of a split scene. The left side highlights continuous lighting solutions  softboxes casting soft light, LED panels of various sizes emitt](Illustration_of_a_split_scene._The_left_side_highlights_continuous_lighting_solutions__softboxes_casting_soft_light,_LED_panels_of_various_sizes_emitt.png?width=400px)
+![Illustration of a split scene. The left side highlights continuous lighting solutions  softboxes casting soft light, LED panels of various sizes emitt](Illustration_of_a_split_scene._The_left_side_highlights_continuous_lighting_solutions__softboxes_casting_soft_light,_LED_panels_of_various_sizes_emitt.png?width=400px#center)
 
 Continuous lighting provides constant illumination, similar to regular lightbulbs. Common types of continuous lights include:
 
@@ -60,7 +60,7 @@ Flashes and strobes emit a brief, powerful burst of light. Types include:
 
 When well-executed, natural light creates a flattering, high-quality look:
 
-![Illustration of a room with a desk setup near a sunny window. A person sits in front of a webcam, and the sunlight casts a natural glow on their face](Illustration_of_a_room_with_a_desk_setup_near_a_sunny_window._A_person_sits_in_front_of_a_webcam,_and_the_sunlight_casts_a_natural_glow_on_their_face.png?width=400px)
+![Illustration of a room with a desk setup near a sunny window. A person sits in front of a webcam, and the sunlight casts a natural glow on their face](Illustration_of_a_room_with_a_desk_setup_near_a_sunny_window._A_person_sits_in_front_of_a_webcam,_and_the_sunlight_casts_a_natural_glow_on_their_face.png?width=400px#center)
 
 - Place your webcam near a sunny window. Use a reflector to fill in shadows. Draw curtains to adjust intensity.
 
@@ -70,7 +70,7 @@ When well-executed, natural light creates a flattering, high-quality look:
 
 ## Tips for Choosing Lighting
 
-![Photo of a studio with multiple light sources. Each light uses a different method to diffuse its light  a translucent diffusion disc, a square softbox](Photo_of_a_studio_with_multiple_light_sources._Each_light_uses_a_different_method_to_diffuse_its_light__a_translucent_diffusion_disc,_a_square_softbox.png?width=400px)
+![Photo of a studio with multiple light sources. Each light uses a different method to diffuse its light  a translucent diffusion disc, a square softbox](Photo_of_a_studio_with_multiple_light_sources._Each_light_uses_a_different_method_to_diffuse_its_light__a_translucent_diffusion_disc,_a_square_softbox.png?width=400px#center)
 
 Consider these factors when selecting lights:
 
@@ -96,11 +96,11 @@ Where you place your light in relation to your webcam can dramatically affect th
 
 Lighting position impacts multiple aspects of your webcam video:
 
-![Illustration of a person seated in front of a camera. On one side, there's a key light casting shadows on the face. Opposite to the key light, a fill ](Illustration_of_a_person_seated_in_front_of_a_camera._On_one_side,_there's_a_key_light_casting_shadows_on_the_face._Opposite_to_the_key_light,_a_fill_.png?width=400px)
+![Illustration of a person seated in front of a camera. On one side, there's a key light casting shadows on the face. Opposite to the key light, a fill ](Illustration_of_a_person_seated_in_front_of_a_camera._On_one_side,_there's_a_key_light_casting_shadows_on_the_face._Opposite_to_the_key_light,_a_fill_.png?width=400px#center)
 
 - It controls where shadows fall on your face. Shadows can create an unflattering or ominous look if placed incorrectly.
 
-![Illustration of a person seated in front of a webcam with various light positions demonstrated. The diverse angles of the light sources cast uneven br](Illustration_of_a_person_seated_in_front_of_a_webcam_with_various_light_positions_demonstrated._The_diverse_angles_of_the_light_sources_cast_uneven_br.png?width=400px)
+![Illustration of a person seated in front of a webcam with various light positions demonstrated. The diverse angles of the light sources cast uneven br](Illustration_of_a_person_seated_in_front_of_a_webcam_with_various_light_positions_demonstrated._The_diverse_angles_of_the_light_sources_cast_uneven_br.png?width=400px#center)
 
 - It affects the brightness and contrast of your image. Poor lighting placement can leave part of your face dim or blown-out. 
 
@@ -116,7 +116,7 @@ While specific positioning depends on context, there are some general guidelines
 
 - Place the key light, your main light source, in front of you at a 45 degree angle to one side. This creates pleasing shadows and avoids a flat look.
 
-![Illustration of a person seated in front of a camera. A key light, representing the primary light source, is placed in front of the individual at a 45](Illustration_of_a_person_seated_in_front_of_a_camera._A_key_light,_representing_the_primary_light_source,_is_placed_in_front_of_the_individual_at_a_45.png?width=400px)
+![Illustration of a person seated in front of a camera. A key light, representing the primary light source, is placed in front of the individual at a 45](Illustration_of_a_person_seated_in_front_of_a_camera._A_key_light,_representing_the_primary_light_source,_is_placed_in_front_of_the_individual_at_a_45.png?width=400px#center)
 
 - Position a fill light, secondary light source, on the opposite side of the key to fill in those shadows. The fill reduces harsh contrasts.
 
@@ -199,7 +199,7 @@ Conversely, stark, dramatic lighting evokes serious, edgy moods. Use a strong, d
 
 Color temperature heavily affects mood too. Warm 3000K - 3500K lighting appears relaxing and friendly. Cool 5000K - 5500K lighting seems crisp and professional. Match color temperature to your video's desired tone. 
 
-![Illustration of a split scene showcasing different color temperatures. On one side, a room bathed in warm 3000K - 3500K lighting exudes a relaxing, fr](Illustration_of_a_split_scene_showcasing_different_color_temperatures._On_one_side,_a_room_bathed_in_warm_3000K_-_3500K_lighting_exudes_a_relaxing,_fr.png?width=400px)
+![Illustration of a split scene showcasing different color temperatures. On one side, a room bathed in warm 3000K - 3500K lighting exudes a relaxing, fr](Illustration_of_a_split_scene_showcasing_different_color_temperatures._On_one_side,_a_room_bathed_in_warm_3000K_-_3500K_lighting_exudes_a_relaxing,_fr.png?width=400px#center)
 
 Here are some examples of mood lighting setups:
 
